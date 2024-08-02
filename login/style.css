@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+.lms-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.right-col, .left-col {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.right-col .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.right-col h3.title {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    
+    font-weight: 400;
+    margin: 20px 0 7px;
+}
+.right-col .logotip {
+    text-align: center;
+}
+.logotip img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.right-col .lms-title {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+}
+.right-col .auth {
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 360px;
+}
+.auth .fluid {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+.fluid input, button {
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    background: #c1c7cd;
+    border: none;
+    outline: none;
+}
+.fluid input {
+    padding: 10px 12px;
+}
+.fluid button {
+    padding: 7px 13px;
+    background: rgb(29,45,91);
+    border: 1px solid rgb(29,45,91);
+    color: azure;
+}
+.bx {
+    display: flex;
+    position: relative;
+}
+.bx i {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+
+}
+.left-col {
+    background: rgb(29,45,91);
+}
+
+@media screen and (min-width: 1024px){
+    h3.title {
+        font-size: 10px;
+        padding: 5px 150px;
+    }
+    .right-col, .left-col {
+        display: flex;
+    }
+    
+}
+@media screen and (max-width: 1023px){
+    h3.title {
+        font-size: 10px;
+        padding: 5px 150px;
+    }
+    .right-col, .left-col {
+        display: flex;
+    }
+
+}
+@media screen and (max-width: 968px){
+    
+    .left-col{
+        display: none;
+    }
+
+    h3.title {
+        padding: 5px 20px;
+        font-size: 8px;
+    }
+
+}
