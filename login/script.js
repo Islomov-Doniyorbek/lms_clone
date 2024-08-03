@@ -22,11 +22,14 @@ auth.addEventListener("click", () => {
         }
     });
 
+    localStorage.setItem("savedData", val);
     if (password.value == nums) {
-        alert("Muvaffaqiyatli kirildi!")
+        window.location.href = "/dashboard/dash.html"
+        alert("Muvaffaqiyatli kirildi!");
     } else {
         alert("Noto'g'ri!!!")
     }
+
 })
 
 function hide() {
