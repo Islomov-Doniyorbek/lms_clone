@@ -1,6 +1,6 @@
 let auth = document.querySelector("#btn_auth");
 
-auth.addEventListener("click", () => {
+auth.onclick = () => {
     let log = document.querySelector(".log");
     let password = document.querySelector(".password");
 
@@ -23,14 +23,17 @@ auth.addEventListener("click", () => {
     });
 
     localStorage.setItem("savedData", val);
+    let a = auth.querySelector("a")
     if (password.value == nums) {
-        window.location.href = "/dashboard/dash.html"
-        alert("Muvaffaqiyatli kirildi!");
+        password.style.border = "1.6px solid lime";
+        setTimeout(() => {
+            window.location.href = "/dashboard/dash.html"
+        }, 1500);
     } else {
-        alert("Noto'g'ri!!!")
+        password.style.border = "1.6px solid red";
     }
 
-})
+}
 
 function hide() {
     let icon = document.querySelector(".bx i");

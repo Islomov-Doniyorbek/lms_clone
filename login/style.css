@@ -81,7 +81,10 @@ body {
     padding: 7px 13px;
     background: rgb(29,45,91);
     border: 1px solid rgb(29,45,91);
+}
+.fluid button a {
     color: azure;
+    text-decoration: none;
 }
 .bx {
     display: flex;
