@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./dash.css">
-    <title>Dashboard - LMS</title>
+    <link rel="stylesheet" href="/student/mening fanlarim/myfan.css">
+    <title>Mening fanlarim</title>
 </head>
 <body>
     <div class="profile-box">
@@ -36,7 +36,7 @@
                     <ul>
                         <li><span>Talaba</span></li>
                         <li><a href="/student/fan tanlov/fan.html"><i class="fa fa-book"></i> <span>Fan tanlov</span></a></li>
-                        <li><a href="/student/mening fanlarim/myfan.html"><i class="fa fa-address-book"></i> <span>Mening fanlarim</span></a></li>
+                        <li><a href="./dash.html"><i class="fa fa-address-book"></i> <span>Mening fanlarim</span></a></li>
                         <li><a href="./dash.html"><i class="fa fa-calendar"></i> <span>Dars jadvali</span></a></li>
                         <li><a href="./dash.html"><i class="fa fa-calculator"></i> <span>Qayta o'qish</span></a></li>
                         <li><a href="./dash.html"><i class="fa fa-question-circle-o"></i> <span>Yakuniy</span></a></li>
@@ -73,56 +73,58 @@
                 </div>
             </header>
             <main>
-                <div class="out-wrapper">
-                    <div class="wrapper">
-                        <div class="inner-wrap">
-                            <h2 class="title_news">Qayta o'qish</h2>
-                            <h4><p>Hurmatli talabalar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet quod possimus, illum similique placeat. Est, nam esse aut commodi nihil laudantium, architecto facere sequi placeat repellat alias minus illo?</p></h4>
-                            <div class="date">
-                                <span>01.05.2024</span>
-                                <button>Batafsil</button>
-                            </div>
+                <div class="wrapper">
+                        <div class="header_subject">
+                            <h3>Mening fanlarim</h3>
+                            <select name="semestr" id="semestr">
+                                <option value="1">2023-2024 II semestr qayta o'qish</option>
+                                <option value="1">2023-2024 II semestr</option>
+                                <option value="1">2023-2024 I semestr qayta o'qish</option>
+                                <option value="1">2023-2024 I semestr</option>
+                            </select>
                         </div>
-                        <div class="inner-wrap">
-                            <h2 class="title_news">Eslatma!</h2>
-                            <h4><p>Hurmatli talabalar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet quod possimus, illum similique placeat. Est, nam esse aut commodi nihil laudantium, architecto facere sequi placeat repellat alias minus illo?</p></h4>
-                            <div class="date">
-                                <span>13.04.2024</span>
-                                <button>Batafsil</button>
-                            </div>
-                        </div>
-                        <div class="inner-wrap">
-                            <h2 class="title_news">Qayta o'qishda qatnashish shart emas!</h2>
-                            <h4><p>Hurmatli talabalar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet quod possimus, illum similique placeat. Est, nam esse aut commodi nihil laudantium, architecto facere sequi placeat repellat alias minus illo?</p></h4>
-                            <div class="date">
-                                <span>13.04.2024</span>
-                                <button>Batafsil</button>
-                            </div>
-                        </div>
-                        <div class="inner-wrap">
-                            <h2 class="title_news">Qayta o'qish!</h2>
-                            <h4><p>Hurmatli talabalar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet quod possimus, illum similique placeat. Est, nam esse aut commodi nihil laudantium, architecto facere sequi placeat repellat alias minus illo?</p></h4>
-                            <div class="date">
-                                <span>13.04.2024</span>
-                                <button>Batafsil</button>
-                            </div>
-                        </div>
-                        <div class="inner-wrap">
-                            <h2 class="title_news">Qayta o'qish!</h2>
-                            <h4><p>Hurmatli talabalar, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus amet quod possimus, illum similique placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum ducimus unde dignissimos molestiae illum, impedit velit voluptates maxime repellat, nobis culpa veritatis a harum consequatur commodi mollitia vel aperiam. Est, nam esse aut commodi nihil laudantium, architecto facere sequi placeat repellat alias minus illo?</p></h4>
-                            <div class="date">
-                                <span>13.04.2024</span>
-                                <button>Batafsil</button>
+                        <div class="display_subjects">
+                            <div class="dataTable">
+                                <div class="lit">
+                                    <label for="num">
+                                        <select name="num" id="num">
+                                            <option value="1">10</option>
+                                            <option value="1">25</option>
+                                            <option value="1">50</option>
+                                            <option value="1">100</option>
+                                        </select>
+                                        &nbsp; ta qatorni ko'rsat
+                                    </label>
+                                    
+                                    <div class="search">
+                                        <label for="iz">Izlash: <input type="search"></label>
+                                    </div>
+                                </div>
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fan</th>
+                                            <th>Kredit</th>
+                                            <th>O'qituvchi</th>
+                                            <th>Davomat</th>
+                                            <th>Amal</th>
+                                            <th>Reja</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                </div>
             </main>
             <footer></footer>
         </section>
     </div>
 
-    <script src="./dash.js"></script>
+    <script src="/student/mening fanlarim/myfan.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>
