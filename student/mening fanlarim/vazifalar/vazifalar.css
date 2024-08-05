@@ -321,7 +321,7 @@ td a#vazifalar {
     }
 
     table tr {
-        grid-template-columns: 20% 8% 36% 12% 14% 10%;
+        grid-template-columns: 40% 15% 15% 15% 15%;
         align-items: center;
         justify-content: space-between;
     }
@@ -364,7 +364,7 @@ td a#vazifalar {
         padding: 15px;
     }
     table tr {
-        grid-template-columns: 20% 8% 36% 12% 14% 10%;
+        grid-template-columns: 40% 15% 15% 15% 15%;
         align-items: center;
         justify-content: space-between;
     }
@@ -479,7 +479,7 @@ td a#vazifalar {
     }
     table tr {
         
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 100%;
         justify-content: flex-end;
         align-items: center;
