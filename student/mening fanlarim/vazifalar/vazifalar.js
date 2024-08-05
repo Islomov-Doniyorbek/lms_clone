@@ -43,48 +43,56 @@ function table() {
         "Mirsoliyeva Xurshida Muyinbekovna", "Salimova Gulfiya Mamarayimovna", "Haydarov Xurshid Dalimovich", "Damirova Karina Latifjanovna", "Asamova Jamila Karimovna", "Azimov Azim Azimovich", "Kerimbetova Malika Sayfullayevna", "Zufarova Zarifa Zafarovna", "Saidov Nosir Faritovich", "Shokirov Ruslan Nusratovich", "Turg'unova Barchinoy Boltaboyevna", "Yermolov Shamil Ilyayevich", "Jaloliddinov Murtazo Qo'chqorovich", "Turdiyev Alixo'ja Olimovich", "Safarova Galina Kuramshina", "Maksimov Gamzat Grigoriy", "Istamov Jalol Bekmurodovich", "Marsova Valentina Aleksandrovna", "Kudratov Fatih Jumabayevich"
         
     ]
-    let numbers = [5, 6, 7];
-    let kredits = [4, 6, 6, 4, 8]
-    let nb = [0,0,0,1,1,2,3,4,5,6,7,8]
-    function place(teach, kredit, fan, nb) {
+    let numbers = [4, 5];
+    let score = [5.4, 6.8, 7, 8.4, 9.1, 4, 3.6, 5.8, 6.6, 7.4, 8.2, 9.5, 8.5,10, 9,3,10, 8, 10, 5, 2, 0, 1]
+    
+    let kun = ["4 kun", "4 kun","5 kun","5 kun", "3 kun", "7 kun"]
+    let akaR = Math.floor(Math.random() * teachers.length)
+    let total_score = 0.0;
+    function vazifa(teach) {
         for (let i = 0; i < numbers[Math.floor(Math.random() * numbers.length)]; i++) {
-            let subR = Math.floor(Math.random() * fan.length)
-            let akaR = Math.floor(Math.random() * teach.length)
-            let nbR = Math.floor(Math.random() * nb.length)
+            let kunR = Math.floor(Math.random() * kun.length)
+            let balR = Math.floor(Math.random() * score.length)
             tbody.innerHTML += `
             <tr>
-                <td data-label="Fan">
-                    <p id=\"fann\"> ${fan[subR]}</p>
-                     </td>
-                         <td data-label="Kredit">
-                             ${kredit[Math.floor(Math.random() * kredit.length)]}
-                         </td>
                         <td data-label="O'qituvchi">
+                            <p> ${teach}</p>
+                        </td>
+                         <td data-label="Topshiriq">
+                            <a href="" id="vazifalar">Topshiriq ${i+1}</a>
+                         </td>
+                        <td data-label="Muddat">
                             <p>
-                                 <span class="group">00${akaR}</span> group <br>
-                                 <span class="teacher">${teach[akaR]}</span>
+                                ${kun[kunR]}
                              </p>
                           </td>
-                         <td data-label="Davomat">
-                             <a href="">${nb[nbR]}</a>
+                         <td data-label="Ball | Maks" id="balll">
+                             <p id="total" class="total">${score[balR]}</p> <p id="max" class="total bg">10 </p>  
                           </td>
-                         <td data-label="Amal">
-                             <a href="/student/mening fanlarim/vazifalar/vazifalar.html" id="vazifalar"><i class="fa fa-copy"></i> Vazifalar</a>
-                         </td>
-                         <td data-label="Reja">
-                             <a href="">
-                                 <i class="fa fa-calendar"></i>
-                             </a>
+                         <td data-label="Fayl">
+                             <a href="" id="vazifalar">Fayl</a>
                          </td>
                      </tr>
             `        
-            fan.splice(subR, 1);
-            teach.splice(akaR, 1);
+            total_score += score[balR]
+            document.querySelector("#total_score").innerHTML = parseFloat(total_score.toFixed(2));
+            let perc = (parseFloat(total_score.toFixed(2)) * 100) / 50
+            document.querySelector("#percent").innerHTML = perc + "%";
+            let baho = 2;
+            if (perc >= 90) {
+                baho = 5;
+            } else if (perc >= 70 && perc < 90 ) {
+                baho = 4;
+            }else if (perc >= 60 && perc < 70) {
+                baho = 3
+            } else {
+                baho = 2;
+            }
+            document.querySelector("#baho").innerHTML = baho;
+            
         }
-
     }
-    place(teachers, kredits, subjects, nb)
-    
+    vazifa(teachers[akaR])
 }
 
 table()
