@@ -43,6 +43,7 @@ function table() {
         "Mirsoliyeva Xurshida Muyinbekovna", "Salimova Gulfiya Mamarayimovna", "Haydarov Xurshid Dalimovich", "Damirova Karina Latifjanovna", "Asamova Jamila Karimovna", "Azimov Azim Azimovich", "Kerimbetova Malika Sayfullayevna", "Zufarova Zarifa Zafarovna", "Saidov Nosir Faritovich", "Shokirov Ruslan Nusratovich", "Turg'unova Barchinoy Boltaboyevna", "Yermolov Shamil Ilyayevich", "Jaloliddinov Murtazo Qo'chqorovich", "Turdiyev Alixo'ja Olimovich", "Safarova Galina Kuramshina", "Maksimov Gamzat Grigoriy", "Istamov Jalol Bekmurodovich", "Marsova Valentina Aleksandrovna", "Kudratov Fatih Jumabayevich"
         
     ]
+    let numbers = [4, 5];
     let score = [5.4, 6.8, 7, 8.4, 9.1, 4, 3.6, 5.8, 6.6, 7.4, 8.2, 9.5, 8.5,10, 9,3,10, 8, 10, 5, 2, 0, 1]
     
     let kun = ["4 kun", "4 kun","5 kun","5 kun", "3 kun", "7 kun"]
