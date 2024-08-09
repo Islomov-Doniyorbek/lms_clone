@@ -61,7 +61,7 @@ function info() {
         "/img/onion.jpg",
         "/img/orik.jpg",
         "/img/pear.jpg",
-        "/img/potato.jpg",
+        "/img/potato.jpeg",
         "/img/qovoq.jpg",
         "/img/tarvuz.jpg",
         "/img/tomato.jpg",
