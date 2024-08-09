@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/student/mening fanlarim/vazifalar/vazifalar.css">
-    <title>Vazifalar</title>
+    <link rel="stylesheet" href="/student/yakuniy/yakuniy.css">
+    <title>Mening fanlarim</title>
 </head>
 <body>
     <div class="profile-box">
@@ -75,38 +75,45 @@
             <main>
                 <div class="wrapper">
                         <div class="header_subject">
-                            <h3>Vazifalar</h3>
-                            <button><a href="/student/mening fanlarim/myfan.html"><i class="fa fa-long-arrow-left"></i> Orqaga</a></button>
+                            <h3>Mening fanlarim</h3>
+                            <div class="right">
+                                <button id="rule">Qoidalar</button>
+                                <select name="semestr" id="semestr">
+                                    <option value="1">2023-2024 II semestr qayta o'qish</option>
+                                    <option value="1">2023-2024 II semestr</option>
+                                    <option value="1">2023-2024 I semestr qayta o'qish</option>
+                                    <option value="1">2023-2024 I semestr</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="display_subjects">
                             <div class="dataTable">
-                                    <div class="grid-box-static">
-                                        <div class="col">
-                                            <p>To'plagan bal</p>
-                                            <span id="total_score">35</span>
-                                        </div>
-                                        <div class="col">
-                                            <p>Maks. bal</p>
-                                            <span>50</span>
-                                        </div>
-                                        <div class="col">
-                                            <p>O'zlashtirish</p>
-                                            <span id="percent">70%</span>
-                                        </div>
-                                        <div class="col">
-                                            <p>Hozirgi bahosi</p>
-                                            <span id="baho">4</span>
-                                        </div>
+                                <div class="lit">
+                                    <label for="num">
+                                        <select name="num" id="num">
+                                            <option value="1">10</option>
+                                            <option value="1">25</option>
+                                            <option value="1">50</option>
+                                            <option value="1">100</option>
+                                        </select>
+                                        &nbsp; ta qatorni ko'rsat
+                                    </label>
+                                    
+                                    <div class="search">
+                                        <label for="iz">Izlash: <input type="search"></label>
+                                    </div>
                                 </div>
 
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>O'qituvchi</th>
-                                            <th>Topshiriq</th>
-                                            <th>Muddat</th>
-                                            <th>Ball | Maks</th>
-                                            <th>Fayl</th>
+                                            <th>Fan</th>
+                                            <th>Patok</th>
+                                            <th>Sana</th>
+                                            <th>Boshlanish vaqti</th>
+                                            <th>Xona</th>
+                                            <th>Ball</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -121,7 +128,7 @@
         </section>
     </div>
 
-    <script src="/student/mening fanlarim/vazifalar/vazifalar.js"></script>
+    <script src="/student/yakuniy/yakuniy.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>

@@ -55,13 +55,11 @@ function table() {
                     <p id=\"fann\"> ${subjects[i]}</p>
                      </td>
                          <td data-label="Kredit">
-                             ${kredit[Math.floor(Math.random() * kredit.length)]}
+                             <p>${kredit[Math.floor(Math.random() * kredit.length)]}</p>
                          </td>
                         <td data-label="O'qituvchi">
-                            <p>
-                                 <span class="group">00${akaR}</span> group <br>
-                                 <span class="teacher">${teach[akaR]}</span>
-                             </p>
+                                 <p class="teacher">00${akaR}-guruh ${teach[akaR]}</p>
+                             
                           </td>
                          <td data-label="Davomat">
                              <a href="">${nb[nbR]}</a>

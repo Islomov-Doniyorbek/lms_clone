@@ -136,85 +136,76 @@ main .wrapper .header_subject h3 {
 main .wrapper .header_subject select {
     position: relative;
     font-size: 16px;
-    padding: 10px 100px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+main .right {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+main .wrapper .right button {
+    position: relative;
+    padding: 7px 13px;
+    border: 1px solid #1d2d5b;
+    font-size: 18px;
+    color: #1d2d5b;
+    border-radius: 4px;
 }
 main .wrapper .display_subjects {
     background: #ffffff;
     padding: 15px 20px;
     position: relative;
 }
-
-main .summa {
+main .wrapper .dataTable .lit {
     position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 5px;
-    color: rgb(147, 146, 146);
-    font-weight: 100;
+    padding-bottom: 25px;
+    border-bottom: 1.3px solid silver;
 }
-main .tableBox {
+main .dataTable .lit select {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+main .dataTable .lit input {
+    padding: 5px 12px;
+    position: relative;
+    border: 1px solid #c1c7cd;
+    color: #646464;
+    height: 40px;
+}
+main table.table {
     position: relative;
     width: 100%;
+    padding: 10px 0;
+}
+table a {
+    text-decoration: none;
+    color: #1d2d5b;
+}
+table tbody {
+    position: relative;
+    width: 100%;
+}
+table  tr {
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1.3px solid silver;
     display: grid;
-    padding: 15px 5px 5px 5px;
-    gap: 10px;
 }
-main .table {
-    position: relative;
-    border-collapse: collapse;
-}
-main .table tr {
-    position: relative;
-    width: 100%;
-    display: grid;
-}
-main .table th, td {
+ td, th {
     position: relative;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    border: 1px solid #ddd;
-}
-main th {
-    text-align: start;
-}
-main td:nth-child(2){
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-main td:nth-child(1){
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+td a#vazifalar {
+    display: flex; 
+    gap: 8px;
 }
-main td button {
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 13px;
-    position: relative;
-    border: 1.3px solid #1d2d5b;
-    color: #1d2d5b;
-    background: transparent;
-}
-
-main td button.bg {
-    background: #1d2d5b;
-    color: #ffffff;
-}
-.calculator {
-    padding: 20px 15px 10px 15px;
-    border: 1px solid #ddd;
-    font-size: 18px;
-    position: relative;
-}
-
 
 .profile-box {
     position: absolute;
@@ -313,17 +304,35 @@ main td button.bg {
     main .header_subject {
         flex-direction: row;
     }
-    .tableBox {
-        grid-template-columns: 65% 34%;
+    main .lit {
+        flex-direction: row;
     }
-    th, td {
-        font-size: 18px;
+    .lit label {
+        font-size: 16px;
     }
-    td button {
-        font-size: 18px;
+
+    main .right {
+        flex-direction: row;
     }
-    tr {
-        grid-template-columns: 70% 15% 15%;
+    table tr {
+        grid-template-columns: 25% 15% 20% 15% 10% 7% 8%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    td, th {
+        
+    align-items: center;
+    justify-content: flex-start;
+    }
+    td, th {
+        font-size: 14px;
+        text-align: center;
+    }
+    td a {
+        padding: 7px 13px;
+        border-radius: 4px;
+        border: 1.3px solid silver;
+        font-weight: 400;
     }
 }
 @media screen and (max-width:1047px){
@@ -347,6 +356,22 @@ main td button.bg {
     }
     main .wrapper {
         padding: 15px;
+    }
+    main .right {
+        flex-direction: row;
+    }
+    table tr {
+        grid-template-columns: 25% 15% 20% 15% 10% 7% 8%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    td, th {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    td, th {
+        font-size: 12px;
     }
     aside.width {
         width: 75px;
@@ -380,16 +405,17 @@ main td button.bg {
         justify-content: center;
         transition: 0.9s ease;
     }
-    .tableBox {
-        grid-template-columns: 65% 34%;
+    td a {
+        padding: 6px 11px;
+        border-radius: 4px;
+        border: 1.3px solid silver;
+        font-weight: 400;
     }
-    th, td {
-        font-size: 18px;
-    }td button {
-        font-size: 18px;
+    main .lit {
+        flex-direction: row;
     }
-    tr {
-        grid-template-columns: 70% 15% 15%;
+    .lit label {
+        font-size: 16px;
     }
    
 }
@@ -446,31 +472,51 @@ main td button.bg {
         gap: 15px;
     }
 
-    .tableBox {
+    main .right {
+        flex-direction: column;
+    }
+    main .lit {
+        padding-top: 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .lit label {
+        font-size: 16px;
+    }
+    table thead tr {
+        display: none;
+    }
+    table tr {
+        
+        grid-template-rows: repeat(7, 1fr);
         grid-template-columns: 100%;
+        gap: 10px;
+        width: 100%;
     }
-    th, td {
-        font-size: 14px;
+    tr td {
+        position: relative;
+        border-bottom: 1px solid rgba(192, 192, 192, 0.18);
+        font-size: 16px;
+        width: 100%;
     }
-    td button {
-        font-size: 14px;
+    td p {
+        width: 70%;
+        text-align: end;
     }
-    tr {
-        grid-template-columns: 40% 20% 40%;
+    td::before {
+        position: relative;
+        content: attr(data-label);
+        width: 100%;
     }
-   
+    td a {
+        padding: 5px 8px;
+        border-radius: 4px;
+        border: 1.3px solid silver;
+        font-weight: 400;
+    }
     
 
     
 }
 
-#oplata {
-    width: 120px;
-    height: 30px;
-    border-radius: 4px;
-    padding: 7px 13px;
-    position: relative;
-    border: 1.3px solid lime;
-    color: azure;
-    background: lime;
-}
+
