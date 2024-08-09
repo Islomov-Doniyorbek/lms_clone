@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/student/mening fanlarim/myfan.css">
-    <title>Mening fanlarim</title>
+    <link rel="stylesheet" href="/student/info/info.css">
+    <title>Talaba haqida ma'lumot</title>
 </head>
 <body>
     <div class="profile-box">
@@ -74,57 +74,37 @@
             </header>
             <main>
                 <div class="wrapper">
-                        <div class="header_subject">
-                            <h3>Mening fanlarim</h3>
-                            <select name="semestr" id="semestr">
-                                <option value="1">2023-2024 II semestr qayta o'qish</option>
-                                <option value="1">2023-2024 II semestr</option>
-                                <option value="1">2023-2024 I semestr qayta o'qish</option>
-                                <option value="1">2023-2024 I semestr</option>
-                            </select>
+                    <div class="header_subject">
+                        <h3>Ma'lumot</h3>
+                        <div></div>
+                    </div>
+                    <div class="display_subjects">
+                        <div class="card">
+                            <img src="/img/anor.jpg" alt="" class="img">
+                            <strong>F.I.SH.:<span id="fish"></span></strong>
+                            <strong>Tug'ilgan sanasi: <span id="birth"></span></strong>
+                            <strong>Jinsi: <span id="jins">Erkak/Ayol</span></strong>
+                            <strong>Reyting daftarcha: <span id="reyting"></span></strong>
+                            <strong>Manzil: <span id="address"></span></strong>
                         </div>
-                        <div class="display_subjects">
-                            <div class="dataTable">
-                                <div class="lit">
-                                    <label for="num">
-                                        <select name="num" id="num">
-                                            <option value="1">10</option>
-                                            <option value="1">25</option>
-                                            <option value="1">50</option>
-                                            <option value="1">100</option>
-                                        </select>
-                                        &nbsp; ta qatorni ko'rsat
-                                    </label>
-                                    
-                                    <div class="search">
-                                        <label for="iz">Izlash: <input type="search"></label>
-                                    </div>
-                                </div>
-
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Fan</th>
-                                            <th>Kredit</th>
-                                            <th>O'qituvchi</th>
-                                            <th>Davomat</th>
-                                            <th>Amal</th>
-                                            <th>Reja</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="card">
+                            <strong>Yo'nalishi: <span id="type"></span></strong>
+                            <strong>O'qish tili: <span id="lang">Uz</span></strong>
+                            <strong>Darajasi: <span id="daraja">Bakalavr</span></strong>
+                            <strong>O'quv shakli: <span id="shakl">Kunduzgi</span></strong>
+                            <strong>Kurs: <span id="kurs">2</span></strong>
+                            <strong>Guruh: <span id="guruh"></span></strong>
+                            <strong>Murabbiy: <span id="tutor"></span></strong>
+                            <strong>Stipendiya: <span id="stipend"></span></strong>
                         </div>
                     </div>
+                </div>
             </main>
             <footer></footer>
         </section>
     </div>
 
-    <script src="/student/mening fanlarim/myfan.js"></script>
+    <script src="/student/info/info.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>
