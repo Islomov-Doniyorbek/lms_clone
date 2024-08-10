@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/student/study-plan/plan.css">
-    <title>Individual shaxsiy reja</title>
+    <link rel="stylesheet" href="/student/survey/survey.css">
+    <title>So'rovnomalar</title>
 </head>
 <body>
     <div class="profile-box">
@@ -40,7 +40,7 @@
                         <li><a href="/student/dars jadvali/schedule.html"><i class="fa fa-calendar"></i> <span>Dars jadvali</span></a></li>
                         <li><a href="/student/qayta o'qish/return.html"><i class="fa fa-calculator"></i> <span>Qayta o'qish</span></a></li>
                         <li><a href="/student/yakuniy/yakuniy.html"><i class="fa fa-question-circle-o"></i> <span>Yakuniy</span></a></li>
-                        <li><a href="/student/info/info.html"><i class="fa fa-file"></i> <span>Individual shaxsiy reja</span></a></li>
+                        <li><a href="/student/study-plan/plan.html"><i class="fa fa-file"></i> <span>Individual shaxsiy reja</span></a></li>
                         <li><a href="/student/info/info.html"><i class="fa fa-info-circle"></i> <span>Ma'lumot</span></a></li>
                         <li><a href="/student/survey/survey.html"><i class="fa fa-bar-chart"></i> <span>So'rovnoma</span></a></li>
                         <li><a href="./dash.html"><i class="fa fa-cogs"></i> <span>Talaba xizmati</span></a></li>
@@ -74,24 +74,54 @@
             </header>
             <main>
                 <div class="wrapper">
-                        <div class="header_subject">
-                            <h3>Individual shaxsiy reja <br>
-                            <span>GPA: <b class="gpa"></b></span>
-                            </h3>
-                            <div></div>
+                    <div class="header_subject">
+                        <h3>So'rovnomalar</h3>
+                        <div></div>
+                    </div>
+                    <div class="display_subjects">
+                        <div class="panel">
+                            <p id="p">
+                                <span class="current">Amaldagi</span>
+                                <span class="finished">Tugallangan</span>
+                            </p>
                         </div>
-                        <div class="display_subjects">
-                            <div class="dataTable">
-                               
+                        <div class="area">
+                            <div class="tab-content" id="current">
+                                <div class="row">
+                                    <p>
+                                        <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp; Amaldagi so'rovnomalar mavjud emas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="finished">
+                                <div class="card">
+                                    <h3 class="title">Yakuniy nazoratni o'tkazish</h3>
+                                    <p id="dur">
+                                        <small id="start">30-12-2024 | 09:00</small><br>
+                                        <small id="stop">31-12-2024 | 19:00</small>
+                                    </p>
+                                    <button id="see">Ko'rish</button>
+
+                                </div>
+                                <div class="card">
+                                    <h3 class="title">Yakuniy nazoratni o'tkazish</h3>
+                                    <p id="dur">
+                                        <small id="start">14-02-2024 | 09:00</small><br>
+                                        <small id="stop">14-02-2024 | 19:00</small>
+                                    </p>
+                                    <button id="see">Ko'rish</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </main>
             <footer></footer>
         </section>
     </div>
 
-    <script src="/student/study-plan/plan.js"></script>
+    <script src="/student/survey/survey.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>
