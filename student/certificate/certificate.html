@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/student/yakuniy/yakuniy.css">
-    <title>Yakuniy</title>
+    <link rel="stylesheet" href="/student/certificate/certificate.css">
+    <title>Ma'lumotnoma</title>
 </head>
 <body>
     <div class="profile-box">
@@ -40,7 +40,7 @@
                         <li><a href="/student/dars jadvali/schedule.html"><i class="fa fa-calendar"></i> <span>Dars jadvali</span></a></li>
                         <li><a href="/student/qayta o'qish/return.html"><i class="fa fa-calculator"></i> <span>Qayta o'qish</span></a></li>
                         <li><a href="/student/yakuniy/yakuniy.html"><i class="fa fa-question-circle-o"></i> <span>Yakuniy</span></a></li>
-                        <li><a href="/student/info/info.html"><i class="fa fa-file"></i> <span>Individual shaxsiy reja</span></a></li>
+                        <li><a href="/student/study-plan/plan.html"><i class="fa fa-file"></i> <span>Individual shaxsiy reja</span></a></li>
                         <li><a href="/student/info/info.html"><i class="fa fa-info-circle"></i> <span>Ma'lumot</span></a></li>
                         <li><a href="/student/survey/survey.html"><i class="fa fa-bar-chart"></i> <span>So'rovnoma</span></a></li>
                         <li><a href="/student/certificate/certificate.html"><i class="fa fa-cogs"></i> <span>Talaba xizmati</span></a></li>
@@ -74,61 +74,55 @@
             </header>
             <main>
                 <div class="wrapper">
-                        <div class="header_subject">
-                            <h3>Mening fanlarim</h3>
-                            <div class="right">
-                                <button id="rule">Qoidalar</button>
-                                <select name="semestr" id="semestr">
-                                    <option value="1">2023-2024 II semestr qayta o'qish</option>
-                                    <option value="1">2023-2024 II semestr</option>
-                                    <option value="1">2023-2024 I semestr qayta o'qish</option>
-                                    <option value="1">2023-2024 I semestr</option>
-                                </select>
-                            </div>
+                    <div class="header_subject">
+                        <h3>Ma'lumotnoma</h3>
+                        <div></div>
+                    </div>
+                    <div class="display_subjects">
+                        <div class="ariza">
+                            <button id="addAriza">
+                                <span id="plus">+</span> Ariza berish
+                            </button>
                         </div>
-                        <div class="display_subjects">
-                            <div class="dataTable">
-                                <div class="lit">
-                                    <label for="num">
-                                        <select name="num" id="num">
-                                            <option value="1">10</option>
-                                            <option value="1">25</option>
-                                            <option value="1">50</option>
-                                            <option value="1">100</option>
-                                        </select>
-                                        &nbsp; ta qatorni ko'rsat
-                                    </label>
-                                    
-                                    <div class="search">
-                                        <label for="iz">Izlash: <input type="search"></label>
-                                    </div>
+                        <div class="dataTable">
+                            <div class="lit">
+                                <label for="num">
+                                    <select name="num" id="num">
+                                        <option value="1">10</option>
+                                        <option value="1">25</option>
+                                        <option value="1">50</option>
+                                        <option value="1">100</option>
+                                    </select>
+                                    &nbsp; ta qatorni ko'rsat
+                                </label>
+                                
+                                <div class="search">
+                                    <label for="iz">Izlash: <input type="search"></label>
                                 </div>
-
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Fan</th>
-                                            <th>Patok</th>
-                                            <th>Sana</th>
-                                            <th>Boshlanish vaqti</th>
-                                            <th>Xona</th>
-                                            <th>Ball</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        
-                                    </tbody>
-                                </table>
                             </div>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Turi</th>
+                                        <th>Qayerga?</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                </div>
             </main>
             <footer></footer>
         </section>
     </div>
 
-    <script src="/student/yakuniy/yakuniy.js"></script>
+    <script src="/student/certificate/certificate.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>
