@@ -44,41 +44,43 @@ document.querySelector(".time").innerHTML = `${hours}:${minutes}`
 function table() {
     let tbody = document.querySelector(".table tbody");
     
-    let subjects = [
-        "Sun'iy intellekt asoslari", "Kiberxavfsizlik asoslari", "Ma'lumotlar tuzilmasi va algoritmlash", "Elektronika va sxemalar", "Kompyuter tashkillashtirish"
+    let mavzu = [
+        "Web olam", "Little programmers", "Yangi tizimlar", "Sun'iy web sayt", "Kelajak robotlari", "Zamonaviy veb ilovalar"
     ]
     let teachers = [
         "Soliyev Barat Khanturayev", "Nestrov Gabriel Kamalovich", "Qahhorov Zohid Musayevich", "Lutfullayeva Sanobar Munirbayevna", "Rashidov Radik Kutlimuradovich", "Damirova Farida Hamzayevna", "Asadullayev Nodir Botirovich", "Yuriyeva Galina Kuramshina","Valiyev Shamsiddin Alibekovich", "Qilichov Bekzod Jumayevich", "Muhammadkarimova Munavvar Kudratullayevna","Maratov Ruslan Maksimov", "Bo'riboyev Yunus Karabayevich"
         
     ]
-    let kredits = [4, 6, 6, 4, 8]
-    let nb = [0,0,0,1,1,2,3,4,5,6,7,8]
-    function place(teach, kredit, nb) {
-        for (let i = 0; i < 5; i++) {
+    let add = ["Yo'q", "Ilmiy ish", "Maqola"];
+    let baho = [4, 5];
+    function place(teach,theme) {
+        for (let i = 0; i < 1; i++) {
             let akaR = Math.floor(Math.random() * teach.length)
-            let nbR = Math.floor(Math.random() * nb.length)
+            let br = Math.floor(Math.random() * baho.length)
+            let addr = Math.floor(Math.random() * add.length)
+            let taqdimot = Math.floor(Math.random() * (12000 - 4000 + 1) + 4000)
             tbody.innerHTML += `
             <tr>
-                <td data-label="Fan">
-                    <p id=\"fann\"> ${subjects[i]}</p>
+                <td data-label="Mavzu">
+                    <p id=\"fann\"> ${theme[i]}</p>
                      </td>
-                         <td data-label="Kredit">
-                             <p>${kredit[Math.floor(Math.random() * kredit.length)]}</p>
+                         <td data-label="Rahbar">
+                             <p>${teach[akaR]}</p>
                          </td>
-                        <td data-label="O'qituvchi">
-                                 <p class="teacher">00${akaR}-guruh ${teach[akaR]}</p>
+                        <td data-label="Taqdimot">
+                                 <p class="taqdimot">
+                                    ${taqdimot}
+                                 </p>
                              
                           </td>
-                         <td data-label="Davomat">
-                             <a href="">${nb[nbR]}</a>
+                         <td data-label="Diplom ishi">
+                             <a href="">Diplom ishi</a>
                           </td>
-                         <td data-label="Amal">
-                             <a href="/student/mening fanlarim/vazifalar/vazifalar.html" id="vazifalar"><i class="fa fa-copy"></i> Vazifalar</a>
+                         <td data-label="Qo'shimcha">
+                             ${add[addr]}
                          </td>
-                         <td data-label="Reja">
-                             <a href="">
-                                 <i class="fa fa-calendar"></i>
-                             </a>
+                         <td data-label="Olingan baho">
+                             ${baho[br]}
                          </td>
                      </tr>
             `        
@@ -86,7 +88,7 @@ function table() {
         }
 
     }
-    place(teachers, kredits, nb)
+    place(teachers,mavzu)
     
 }
 

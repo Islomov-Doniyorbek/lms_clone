@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/student/survey/survey.css">
-    <title>So'rovnomalar</title>
+    <link rel="stylesheet" href="/student/diplom/diplom.css">
+    <title>Diplom ishi</title>
 </head>
 <body>
     <div class="profile-box">
@@ -74,54 +74,52 @@
             </header>
             <main>
                 <div class="wrapper">
-                    <div class="header_subject">
-                        <h3>So'rovnomalar</h3>
-                        <div></div>
-                    </div>
-                    <div class="display_subjects">
-                        <div class="panel">
-                            <p id="p">
-                                <span class="current">Amaldagi</span>
-                                <span class="finished">Tugallangan</span>
-                            </p>
+                        <div class="header_subject">
+                            <h3>Diplom ishi</h3>
+                            <div></div>
                         </div>
-                        <div class="area">
-                            <div class="tab-content" id="current">
-                                <div class="row">
-                                    <p>
-                                        <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp; Amaldagi so'rovnomalar mavjud emas
-                                    </p>
+                        <div class="display_subjects">
+                            <div class="dataTable">
+                                <div class="lit">
+                                    <label for="num">
+                                        <select name="num" id="num">
+                                            <option value="1">10</option>
+                                            <option value="1">25</option>
+                                            <option value="1">50</option>
+                                            <option value="1">100</option>
+                                        </select>
+                                        &nbsp; ta qatorni ko'rsat
+                                    </label>
+                                    
+                                    <div class="search">
+                                        <label for="iz">Izlash: <input type="search"></label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tab-content" id="finished">
-                                <div class="card">
-                                    <h3 class="title">Yakuniy nazoratni o'tkazish</h3>
-                                    <p id="dur">
-                                        <small id="start">30-12-2024 | 09:00</small><br>
-                                        <small id="stop">31-12-2024 | 19:00</small>
-                                    </p>
-                                    <button id="see">Ko'rish</button>
 
-                                </div>
-                                <div class="card">
-                                    <h3 class="title">Yakuniy nazoratni o'tkazish</h3>
-                                    <p id="dur">
-                                        <small id="start">14-02-2024 | 09:00</small><br>
-                                        <small id="stop">14-02-2024 | 19:00</small>
-                                    </p>
-                                    <button id="see">Ko'rish</button>
-
-                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Mavzu</th>
+                                            <th>Rahbar</th>
+                                            <th>Taqdimot</th>
+                                            <th>Diplom ishi</th>
+                                            <th>Qo'shimcha</th>
+                                            <th>Olingan baho</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                </div>
             </main>
             <footer></footer>
         </section>
     </div>
 
-    <script src="/student/survey/survey.js"></script>
+    <script src="/student/diplom/diplom.js"></script>
     <script src="/login/script.js"></script>
 </body>
 </html>

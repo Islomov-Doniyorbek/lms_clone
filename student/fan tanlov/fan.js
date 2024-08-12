@@ -31,7 +31,14 @@ let savedData = localStorage.getItem("savedData");
 
 username.innerHTML = savedData
 
-
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth() + 1;
+let day = date.getDate();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+document.querySelector(".date").innerHTML = `${day}.${month}.${year}`;
+document.querySelector(".time").innerHTML = `${hours}:${minutes}`
 
 function choose() {
     let cols = document.querySelectorAll(".fakultet .col");
